@@ -14,22 +14,9 @@ export const metadata: Metadata = {
   description:
     'Fast, secure, and hassle-free installation of smart doorbells, locks, security cameras, and mesh Wi-Fi for homeowners in the Fort Worth metro area. Verified technicians, upfront pricing, 100% satisfaction guaranteed.',
   generator: 'v0.app',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+   icons: {
+    icon: '/cedrusxlogofavicon.jpg',
+    apple: '/cedrusxlogofavicon.jpg',
   },
 }
 
