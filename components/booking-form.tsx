@@ -18,11 +18,18 @@ const fieldClasses =
 export function BookingForm() {
   const [submitted, setSubmitted] = useState(false)
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+ function handleSubmit(event: any) {
     event.preventDefault()
-    setSubmitted(true)
-  }
+    const formData = new FormData(event.target)
 
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData as any).toString(),
+    })
+      .then(() => setSubmitted(true))
+      .catch((error) => console.error(error))
+  }
   return (
     <section id="booking" className="scroll-mt-16 border-t border-border/60 py-16 lg:py-24">
       <div className="mx-auto grid max-w-6xl items-start gap-10 px-4 sm:px-6 lg:grid-cols-2">
@@ -60,7 +67,8 @@ export function BookingForm() {
               </Button>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+            <form name="quote-request" method="POST" data-netlify="true" onSubmit={handleSubmit} className="flex flex-col gap-5">
+              <input type="hidden" name="form-name" value="quote-request" />
               <div className="grid gap-5 sm:grid-cols-2">
                 <div className="flex flex-col gap-2">
                   <label htmlFor="name" className="text-sm font-medium">
