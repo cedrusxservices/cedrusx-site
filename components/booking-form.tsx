@@ -78,7 +78,14 @@ export function BookingForm() {
               </Button>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+        <form 
+  name="quote-request" 
+  method="POST" 
+  data-netlify="true" 
+  onSubmit={handleSubmit}
+  className="flex flex-col gap-6"
+>
+  <input type="hidden" name="form-name" value="quote-request" />
               <div className="grid gap-5 sm:grid-cols-2">
                 <div className="flex flex-col gap-2">
                   <label htmlFor="name" className="text-sm font-medium">
