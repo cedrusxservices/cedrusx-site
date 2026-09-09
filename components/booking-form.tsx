@@ -18,9 +18,12 @@ const fieldClasses =
 export function BookingForm() {
   const [submitted, setSubmitted] = useState(false)
 
- function handleSubmit(event: any) {
+   function handleSubmit(event: any) {
     event.preventDefault()
     const formData = new FormData(event.target)
+    
+    // Explicitly set the Netlify form name
+    formData.append("form-name", "quote-request")
 
     fetch("/", {
       method: "POST",
@@ -30,6 +33,7 @@ export function BookingForm() {
       .then(() => setSubmitted(true))
       .catch((error) => console.error(error))
   }
+
   return (
     <section id="booking" className="scroll-mt-16 border-t border-border/60 py-16 lg:py-24">
       <div className="mx-auto grid max-w-6xl items-start gap-10 px-4 sm:px-6 lg:grid-cols-2">
