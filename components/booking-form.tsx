@@ -18,22 +18,29 @@ const fieldClasses =
 export function BookingForm() {
   const [submitted, setSubmitted] = useState(false)
 
-   function handleSubmit(event: any) {
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
-    const formData = new FormData(event.target)
     
-    // Explicitly set the Netlify form name
-    formData.append("form-name", "quote-request")
+    const target = event.currentTarget
+    const data = new URLSearchParams()
+    
+    data.append("form-name", "quote-request")
+    data.append("name", target.name ? (target.elements.namedItem("name") as HTMLInputElement).value : "")
+    data.append("email", target.email ? (target.elements.namedItem("email") as HTMLInputElement).value : "")
+    data.append("phone", target.phone ? (target.elements.namedItem("phone") as HTMLInputElement).value : "")
+    data.append("service", target.service ? (target.elements.namedItem("service") as HTMLInputElement).value : "")
+    data.append("date", target.date ? (target.elements.namedItem("date") as HTMLInputElement).value : "")
+    data.append("time", target.time ? (target.elements.namedItem("time") as HTMLInputElement).value : "")
+    data.append("message", target.message ? (target.elements.namedItem("message") as HTMLTextAreaElement).value : "")
 
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData as any).toString(),
+      body: data.toString(),
     })
       .then(() => setSubmitted(true))
       .catch((error) => console.error(error))
   }
-
   return (
     <section id="booking" className="scroll-mt-16 border-t border-border/60 py-16 lg:py-24">
       <div className="mx-auto grid max-w-6xl items-start gap-10 px-4 sm:px-6 lg:grid-cols-2">
