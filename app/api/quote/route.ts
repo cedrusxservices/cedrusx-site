@@ -11,7 +11,7 @@ export async function POST(req: Request) {
         Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "CedrusX Quotes <onboarding@resend.dev>",
+        from: "CedrusX Quotes <quotes@cedrusx.com>",
         to: "cedrusx.services@cedrusx.com",
         subject: `New Quote Request from ${body.name}`,
         html: `
