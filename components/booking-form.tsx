@@ -54,13 +54,13 @@ export function BookingForm() {
             no pressure &mdash; just upfront pricing and a plan that fits your home.
           </p>
           <a
-            href="tel:+18176597021"
+            href="tel:+16822078442"
             className="mt-6 inline-flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-3 text-sm font-medium transition-colors hover:border-primary/50"
           >
             <span className="flex size-9 items-center justify-center rounded-lg bg-primary/15 text-primary">
               <PhoneCall className="size-4" />
             </span>
-            Prefer to call? (817) 659-7021
+            Prefer to call? (682) 207-8442
           </a>
         </div>
 
@@ -91,7 +91,7 @@ export function BookingForm() {
                   <label htmlFor="name" className="text-sm font-medium">
                     Full Name
                   </label>
-                  <input id="name" name="name" required placeholder="Jordan Rivera" className={fieldClasses} />
+                  <input id="name" name="name" required placeholder="First Last" className={fieldClasses} />
                 </div>
                 <div className="flex flex-col gap-2">
                   <label htmlFor="phone" className="text-sm font-medium">
@@ -102,7 +102,7 @@ export function BookingForm() {
                     name="phone"
                     type="tel"
                     required
-                    placeholder="(817) 555-0199"
+                    placeholder="(817) 555-5555"
                     className={fieldClasses}
                   />
                 </div>
