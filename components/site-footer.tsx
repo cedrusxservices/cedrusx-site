@@ -56,9 +56,9 @@ export function SiteFooter() {
             </h3>
             <ul className="mt-4 flex flex-col gap-3 text-sm text-muted-foreground">
               <li>
-                <a href="tel:+18176597021" className="flex items-center gap-2 transition-colors hover:text-foreground">
+                <a href="tel:+16822078442" className="flex items-center gap-2 transition-colors hover:text-foreground">
                   <Phone className="size-4 text-primary" />
-                  (817) 659-7021
+                  (682) 207-8442
                 </a>
               </li>
               <li>
