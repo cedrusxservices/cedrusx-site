@@ -21,7 +21,7 @@ export default function SmartLightingAndPowerServices() {
     },
     {
       title: "Smart Ceiling Fan & Light",
-      price: "$160",
+      price: "$150",
       subtitle: "Includes fan assembly + light kit",
       description: "Assembly, ceiling mounting, and smart canopy receiver or wall switch setup for ceiling fan & light combos.",
       icon: Fan,
@@ -48,19 +48,6 @@ export default function SmartLightingAndPowerServices() {
         "Custom automation scene setup",
       ],
       popular: true,
-    },
-    {
-      title: "Dual Comfort Fan & Light",
-      price: "$275",
-      savings: "Save $35",
-      description: "Complete climate and overhead lighting control for one zone.",
-      includes: [
-        "1 Smart Ceiling Fan & Light combo install",
-        "1 Standalone Smart Ceiling Light install",
-        "Full assembly, mounting & balancing",
-        "Centralized room grouping & schedules",
-      ],
-      popular: false,
     },
     {
       title: "Whole-Home Automation",
