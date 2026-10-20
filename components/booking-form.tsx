@@ -10,7 +10,7 @@ const services = [
   "Mesh Wi-Fi",
   "Full System",
   "Smart Switches & Outlets",
-  "Smart Ceiling Fan Or Light"
+  "Smart Ceiling Fan Or Light",
   "Other",
 ]
 
