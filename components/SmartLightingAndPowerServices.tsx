@@ -106,7 +106,7 @@ export default function SmartLightingAndPowerServices() {
                 </div>
                 <div className="mt-6 pt-4 border-t border-slate-700/50">
                   <a
-                    href="#contact"
+                    href="#booking"
                     className="text-xs font-semibold text-blue-400 hover:text-blue-300 flex items-center justify-between"
                   >
                     <span>Book Single Item</span>
@@ -160,7 +160,7 @@ export default function SmartLightingAndPowerServices() {
 
               <div className="mt-8">
                 <a
-                  href="#contact"
+                  href="#booking"
                   className={`w-full flex items-center justify-center px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
                     bundle.popular
                       ? 'bg-blue-600 hover:bg-blue-500 text-white'
