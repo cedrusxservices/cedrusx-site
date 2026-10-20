@@ -2,6 +2,7 @@ import { SiteHeader } from "@/components/site-header"
 import { Hero } from "@/components/hero"
 import { Services } from "@/components/services"
 import { Pricing } from "@/components/pricing"
+import SmartLightingAndPowerServices from "@/components/SmartLightingAndPowerServices"
 import { HowItWorks } from "@/components/how-it-works"
 import { BookingForm } from "@/components/booking-form"
 import { ServiceAreaFaq } from "@/components/service-area-faq"
@@ -15,6 +16,7 @@ export default function Page() {
         <Hero />
         <Services />
         <Pricing />
+        <SmartLightingAndPowerServices />
         <HowItWorks />
         <BookingForm />
         <ServiceAreaFaq />
