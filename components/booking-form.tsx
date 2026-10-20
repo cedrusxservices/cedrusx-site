@@ -9,6 +9,8 @@ const services = [
   "Smart Lock",
   "Mesh Wi-Fi",
   "Full System",
+  "Smart Switches & Outlets",
+  "Smart Ceiling Fan Or Light"
   "Other",
 ]
 
