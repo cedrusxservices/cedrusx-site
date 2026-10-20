@@ -25,7 +25,7 @@ export function Hero() {
             Smart Home Setup, <span className="text-primary">Made Simple.</span>
           </h1>
           <p className="mt-5 max-w-lg text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Professional installation for doorbells, cameras, smart locks, smart thermostats, and high-speed mesh Wi-Fi.
+            Professional installation for Smart Doorbells, Cameras, Locks, Outlets, Switches, Thermostats, Fans, and High-Speed Mesh Wi-Fi.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
