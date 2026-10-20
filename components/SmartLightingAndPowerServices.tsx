@@ -9,14 +9,14 @@ export default function SmartLightingAndPowerServices() {
     {
       title: "Smart Switch / Dimmer",
       price: "$85",
-      subtitle: "First device ($45 each add-on)",
+      subtitle: "First Switch ($50 each add-on)",
       description: "In-wall line-voltage replacement for single-pole or 3-way switches. Full app pairing and voice setup included.",
       icon: Zap,
     },
     {
       title: "Smart Outlet / Receptacle",
       price: "$85",
-      subtitle: "First outlet ($45 each add-on)",
+      subtitle: "First Outlet ($50 each add-on)",
       description: "Upgrade standard wall outlets to smart dual-outlets with individual control and energy usage monitoring.",
       icon: Plug,
     },
@@ -39,7 +39,7 @@ export default function SmartLightingAndPowerServices() {
   const bundles = [
     {
       title: "Room Upgrade Bundle",
-      price: "$269",
+      price: "$199",
       savings: "Save up to $40",
       description: "Ideal for a living room or primary bedroom overhaul.",
       includes: [
@@ -52,11 +52,11 @@ export default function SmartLightingAndPowerServices() {
     },
     {
       title: "Whole-Home Automation",
-      price: "$499",
+      price: "$475",
       savings: "Best Value",
       description: "Comprehensive smart power and lighting control across multiple rooms.",
       includes: [
-        "Up to 8 Switches/Outlets OR 2 Fan Combos + 4 Switches",
+        "Up to 8 Switches/Outlets OR 2 Fans + 4 Switches",
         "Multi-room hub & ecosystem pairing",
         "Sunset/Sunrise & away-mode automations",
         "Priority scheduling",
