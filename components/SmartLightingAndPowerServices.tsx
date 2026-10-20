@@ -120,11 +120,11 @@ export default function SmartLightingAndPowerServices() {
       </div>
 
       {/* Package Bundles Grid */}
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <h3 className="text-xs font-bold text-center text-slate-400 mb-8 uppercase tracking-wider">
           Money-Saving Service Bundles
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {bundles.map((bundle, index) => (
             <div
               key={index}
