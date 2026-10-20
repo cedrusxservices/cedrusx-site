@@ -93,7 +93,7 @@ export function BookingForm() {
                   <label htmlFor="name" className="text-sm font-medium">
                     Full Name
                   </label>
-                  <input id="name" name="name" required placeholder="First Last" className={fieldClasses} />
+                  <input id="name" name="name" required placeholder="Full Name" className={fieldClasses} />
                 </div>
                 <div className="flex flex-col gap-2">
                   <label htmlFor="phone" className="text-sm font-medium">
