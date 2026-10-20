@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Zap, ShieldCheck, ArrowRight, Fan, Lightbulb, Plug, Cpu } from 'lucide-react';
+import { Button } from "@/components/ui/button"
 
 export default function SmartLightingAndPowerServices() {
   const singleServices = [
