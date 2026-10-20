@@ -105,13 +105,14 @@ export default function SmartLightingAndPowerServices() {
                   <p className="text-xs text-slate-300 mt-3 leading-relaxed">{service.description}</p>
                 </div>
                 <div className="mt-6 pt-4 border-t border-slate-700/50">
-                  <a
-                    href="#booking"
-                    className="text-xs font-semibold text-blue-400 hover:text-blue-300 flex items-center justify-between"
+                 <Button
+                    render={<a href="#booking" />}
+                    nativeButton={false}
+                    className="w-full font-semibold"
+                    variant="outline"
                   >
-                    <span>Book Single Item</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </a>
+                    Book Single Item
+                  </Button>
                 </div>
               </div>
             );
@@ -159,17 +160,14 @@ export default function SmartLightingAndPowerServices() {
               </div>
 
               <div className="mt-8">
-                <a
-                  href="#booking"
-                  className={`w-full flex items-center justify-center px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
-                    bundle.popular
-                      ? 'bg-blue-600 hover:bg-blue-500 text-white'
-                      : 'bg-slate-700 hover:bg-slate-600 text-white'
-                  }`}
+                <Button
+                  render={<a href="#booking" />}
+                  nativeButton={false}
+                  className="w-full font-semibold"
+                  variant={bundle.popular ? "default" : "outline"}
                 >
-                  <span>Book This Package</span>
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </a>
+                  Book This Package
+                </Button>
               </div>
             </div>
           ))}
